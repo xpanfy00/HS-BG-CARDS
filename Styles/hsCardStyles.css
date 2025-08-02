@@ -177,5 +177,63 @@ header {
 
 }
 
+@media (max-width: 768px) {
+    .header-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .dropdown,
+    .search-box,
+    .tier-stars,
+    .star-btn,
+    #modeSelect {
+        width: 100%;
+    }
+
+    .tier-stars {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .star-btn {
+        flex: 1 1 14%;
+        max-width: 40px;
+        margin: 4px auto;
+    }
+
+    .search-box {
+        padding: 6px 10px;
+        justify-content: space-between;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .search-btn {
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-bar {
+        padding: 10px;
+        gap: 8px;
+    }
+
+    .star-btn {
+        max-width: 32px;
+        height: 32px;
+        font-size: 12px;
+    }
+
+    .dropdown, .search-box input {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+}
+
 
 
