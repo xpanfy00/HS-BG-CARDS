@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hearthstone Cards</title>
+    <link rel="stylesheet" href="./Styles/hsCardStyles.css">
+    <script src="./sript/hsCardScript.js"></script>
+</head>
+<body>
+<header >
+    <div class="header-bar">
+        <select class="dropdown">
+            <option value="0">All</option>
+            <option value="3">Heroes</option>
+            <option value="4">Minions</option>
+            <option value="5">Quests</option>
+            <option value="40">Rewards</option>
+            <option value="42">Spells</option>
+            <option value="43">Anomaly</option>
+
+        </select>
+
+        <div class="tier-stars">
+            <button class="star-btn" data-tier="1">1</button>
+            <button class="star-btn" data-tier="2">2</button>
+            <button class="star-btn" data-tier="3">3</button>
+            <button class="star-btn" data-tier="4">4</button>
+            <button class="star-btn" data-tier="5">5</button>
+            <button class="star-btn" data-tier="6">6</button>
+            <button class="star-btn" data-tier="7">7</button>
+        </div>
+
+        <select class="dropdown">
+            <option value="0">Any Type</option>
+            <option value="3">Beast</option>
+            <option value="9">Demon</option>
+            <option value="10">Dragon</option>
+            <option value="4">Elemental</option>
+            <option value="5">Mech</option>
+            <option value="8">Murloc</option>
+            <option value="14">Naga</option>
+            <option value="7">Pirate</option>
+            <option value="2">Quilboar</option>
+            <option value="1">Undead</option>
+        </select>
+
+        <select class="dropdown" id="modeSelect">
+            <option value="any">Any Mod</option>
+            <option value="duos">Duos</option>
+            <option value="solo">Solo</option>
+        </select>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search..." id="searchInput">
+            <button class="search-btn">🔍</button>
+        </div>
+
+    </div>
+</header>
+
+
+<h1 style="text-align:center;">Hearthstone Cards</h1>
+<div class="grid" id="cardGrid">
+    <!-- Cards will be inserted here by JS or server -->
+</div>
+
+
+</body>
+</html>
